@@ -24,3 +24,11 @@ let convert = (sentence) => {
 }
 
 // Your CLI code here
+var j = "";
+for(var i = 2; i < process.argv.length; i++){
+  j += convert(process.argv[i])+" "
+}
+console.log(j);
+// process.argv.forEach((val, index, array)=>{
+//   console.log(`${index}: '${val}'`);
+// });
