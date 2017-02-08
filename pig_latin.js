@@ -23,4 +23,11 @@ let convert = (sentence) => {
   return result.join(" ")
 }
 
-// Your CLI code here
+let argv = process.argv
+let input = ""
+
+for (let i=2; i<argv.length; i++){
+  input += argv[i] + " "
+}
+
+console.log(pigLatin(input))
