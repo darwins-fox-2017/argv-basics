@@ -24,9 +24,9 @@ let convert = (sentence) => {
 }
 
 // Your CLI code here
+    let potong = process.argv.slice(2).join(" ")
+    console.log(convert(potong));
+
     // process.argv.forEach((val, index) => {
     //   console.log(pigLatin(val));
     // });
-
-    let potong = process.argv.slice(2).join(" - ")
-    console.log(pigLatin(potong));
