@@ -24,3 +24,12 @@ let convert = (sentence) => {
 }
 
 // Your CLI code here
+
+let cliArgv = process.argv
+let result = []
+
+for (let i = 2; i < cliArgv.length; i++) {
+  result.push(convert(cliArgv[i]))  
+}
+
+console.log(result.join(' '));
