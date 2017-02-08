@@ -24,3 +24,10 @@ let convert = (sentence) => {
 }
 
 // Your CLI code here
+
+// process.argv.forEach((val, pigLatin, array) => {
+//   console.log(`${index}: '${val}'`);
+// });
+
+let argv = process.argv.splice(2,process.argv.length)
+console.log(convert(argv.join(" ")));
