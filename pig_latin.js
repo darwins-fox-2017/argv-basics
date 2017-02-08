@@ -24,3 +24,8 @@ let convert = (sentence) => {
 }
 
 // Your CLI code here
+let results = ''
+for(let i=2; i<process.argv.length; i++) {
+  results += pigLatin(process.argv[i]) + " "
+}
+console.log(results)
