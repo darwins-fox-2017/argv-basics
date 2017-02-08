@@ -16,7 +16,7 @@ let isPowel = (char) => {
 let convert = (sentence) => {
   let result = []
   let words = sentence.trim().split(/\s+/g)
-  for (let i=0;i<words.length;i++) {
+  for (let i = 0; i < words.length; i++) {
     result[i] = pigLatin(words[i])
   }
 
